@@ -21,10 +21,14 @@ When we click on it, we get 5 statistics about Squirrel Sightings, namely: "Tota
 Project Group 61,
 Section 2
 
-# Contributors and their UNIs
+# Contributors
 
-Ankit Verma, UNI: av2918, 
-Roupya Ranjan Behera, UNI: rrb2150
+Ankit Verma,  
+Roupya Ranjan Behera
+
+# UNIs
+
+UNIs: [av2918, rrb2150]
 
 # Link to the application
 
