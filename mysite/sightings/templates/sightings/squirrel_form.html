@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf8'>
+		<meta name="viewport" content='width-device-width, initial-scale=2'>
+			<style>
+			body {
+				margin:2;
+				background-color:white;
+				font-family:arial;
+				text-align:center;
+				color:blue;
+				}
+			h1 {
+				background-color:#8AD862;
+				color:white;
+				text-align:center;
+				padding:25px;
+				}
+			</style>
+	</head>
+
+		<h1><center>Create a new sighting</center></h1>
+			<body>
+				<form method="post">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<input type="submit" name="add">
+				</form>
+				<a href='/sightings/' class=''><button type='button' class='button'>MAIN PAGE</button></a>
+			</body>
+</html>

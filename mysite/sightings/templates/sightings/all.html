@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Central Park Squirrel Sightings Data</title>
+			<h1><center>Squirrel Sightings</center></h1>
+				
+				<style type="text/css">
+  		
+				h1 {	color:blue;
+					font-size:45pt;
+					font-family:arial;
+                           	}
+				button {color:white;
+                			font-size:22pt;
+                		    	font-family:arial;
+				    	background-color:#8AD862;
+				    	width: 600px;
+                		    	height: 60px;
+			       		}
+				body {  color: blue;
+                			font-size:15;
+                			font-family:arial;
+                			background-color:white;
+			     		}
+
+			ul {columns: 4;}
+
+				</style>
+	
+	</head>
+    		<body>
+			<div>
+
+				<a href='/sightings/add/' class=''>
+        				<center>
+        				<button type="button" class='button'>Create a new sighting!</button>
+        				</center>
+        			</a>
+
+        			<a href='/map/' class=''>
+        				<center>
+        				<button type="button" class='button'>See Map!</button>
+        				</center>
+        			</a>
+
+
+        			<a href='/sightings/stats/' class=''>
+        				<center>
+        				<button type="button" class='button'>Some statistics from the data</button>
+        				</center>
+        			</a>
+			</div>
+        			<a>
+        				<center>
+        					<h2>List of all Squirrel Sightings by their Unique ID</h2>
+        				</center>
+        			</a>
+        		<div>
+             			<ul>
+	   				 {% for squirrel in squirrels %}
+	    			<li>
+		   
+		    			<a href='{{ squirrel.Unique_Squirrel_ID}}'>{{ squirrel.Unique_Squirrel_ID }}</a>
+		    
+	    			</li>
+	    				{% endfor %}
+            			</ul>
+			</div>
+
+    		</body>
+</html>

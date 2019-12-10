@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf8'>
+                <meta name="viewport" content='width-device-width, initial-scale=2'>
+                        <style>
+                        body {
+                                margin:2;
+                                background-color:white;
+                                font-family:arial;
+                                text-align:center;
+                                color:blue;
+                                }
+                        h1 {
+                                background-color:#8AD862;
+                                color:white;
+                                text-align:center;
+                                padding:25px;
+                                }
+                        </style>
+	</head>
+		<h1><center>Statistics of Squirrel Sightings</center></h1>
+		<body>	<center>
+						<li>Total Number of Squirrel Sightings is: {{ Total_Sightings }}</li>
+						
+						<li>Number of Sightings in Night : {{ Sightings_Night }}</li>
+						
+						<li>Number of Squirrels that were Adult : {{ Sightings_Adult }}</li>
+						
+						<li>Number of Squirrels that were Running : {{ Sightings_Running }}</li>
+						
+						<li>Number of Squirrels that were Black in color : {{ Sightings_Black }}</li>
+				
+			</center>
+		</body>
+			<a href='/sightings/' class=''><center><button type='button' class='button'>MAIN PAGE</button></center></a>
+</html>
